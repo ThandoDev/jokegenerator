@@ -7,8 +7,7 @@ let getJoke = () => {
     fetch(url)
     .then(data => data.json())
     .then(item => {
-        console.log('API Response:', item); // Log the entire response object
-        // Check if 'joke' property exists in the response
+        console.log('API Response:', item); 
         if (item.joke) {
             jokeContainer.textContent = item.joke;
         } else {
